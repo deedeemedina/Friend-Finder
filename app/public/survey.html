@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Survey</title>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+
+
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+
+    <style>
+      body {
+        margin: 20px;
+        background-image: linear-gradient(
+          -180deg,
+          pink,
+          red
+      
+        );
+        font-family: 'Rubik', sans-serif;
+      }
+
+      .footer {
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: black;
+        margin-top: 5px;
+      }
+
+
+
+      a:link {
+        color: black;
+      }
+
+      /* A link that has been visited */
+      a:visited {
+        color: black;
+      }
+    
+    </style>
+  </head>
+
+  <body>
+
+
+    <div class="form-group text-center">
+        <div class="form-group">
+            <label for="name"><h2>Name (Required)</h2></label> <br />
+            <input 
+            type="input"
+            class="form-control text-center"
+            id="nameInput"
+            aria-describedby="Name of user"
+            placeholder="Enter your name"
+            required
+            />
+
+            <br />
+            <hr> 
+            <div class="row text-center">
+                <div class="col-6" style="margin:0 auto;">
+                    <label id="q1" for="sell"><h1>Question 1</h1></label>
+                    <select class="form-control text-center" id="sel1">
+                        <option value = "" disabled selected value> -- select an option --</option>
+                        <option value="1">1 (strongly Disagree)</option>
+                        <option value="2">2</option>
+                        <otpion value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5 (Strongly Agree)</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row text-center">
+                    <div class="col-6" style="margin:0 auto;">
+                    <label id="q2" for="sel2"><h2>Question 2</h2></label>
+                    <select class="form-control text-center" id="sel2">
+                      <option value = "" disables selected value>--select an option--</option>
+                      <option value="1">1 (Strongly Disagree)
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                      <option value="4">4</option>
+                      <option value="5">5 (Strongly Disagree)</option>
+                      </select>
+                    </div>
+                </div>
+                <br>
+                <hr>
+                <div class="row text-center">
+                  <div class="col-6" style="margin:0 auto;">
+                  <label id="q3" for="sel3"> <h1>Question 3</h1></label>
+                  <select class="form-control text-center" id="sel3">
+                    <option value = "" disabled selected value>--- select an option---</option>
+                    <option value="1">1 (Strongly Disagree) </option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</otpion>
+                  </select>
+              </div>
+            <div>
+            <br>
+            <hr>
+            <div class="row text-center">
+              <div class="col-6" style="margin:0 auto;">
+               <label id="q4" for="sel4"> <h1>Question 4</h1></label>
+               <select class="form-control text-center" id="sel4">
+                 <option value = "" disabled selected value>--Select an Option</option>
+                 <option value="1">1 (Strongly Disagree)</option>
+                 <option value="2">2</option>
+                 <option value="3">3</option>
+                 <option value="4">4</option>
+                 <option value="5">5 (Strongly Agree)</option>
+               </select>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row text-center">
+              <div class="col-6" style="margin:0 auto;">
+              <label id="q5" for="sel5"> <h1>Question 5</h1></label>
+              <select class="form-control text-center" id="sel5">
+                <option value = "" disabled selected value>---Select an Option---</option>
+                <option value="1">1 (Strongly Disagree</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5 (Strongly Agree)</option>
+              </select>
+              </div>
+            </div>
+            <br>
+            <hr>
+            <div class="row text-center">
+              <div class="col-6" style="margin:0 auto;">
+              <label id="q6" for="sel6"> <h1>Question 6</h1></label>
+              <select class="form-control text-center" id="Sel6">
+                <option value = "" disabled selected value>---Select an Option---</option>
+                <option value="1">1 (Strongly Disagree)</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option vlaue="5">5 (Strongly Agree)</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <br>
+        <hr>
+        <div class="row text-center">
+          <div class="col-6" style="margin:0 auto;">
+          <label id="q7" for="sel7"> <h1>Question 7</h1></label>
+          <select class="form-control text-center" id="Sel6">
+            <option value = "" disabled selected value>---Select an Option---</option>
+            <option value="1">1 (Strongly Disagree)</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option vlaue="5">5 (Strongly Agree)</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <br>
+    <hr>
+    <div class="row text-center">
+      <div class="col-8" style="margin:0 auto;">
+      <label id="q8" for="sel8"> <h1>Question 8</h1></label>
+      <select class="form-control text-center" id="Sel6">
+        <option value = "" disabled selected value>---Select an Option---</option>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option vlaue="5">5 (Strongly Agree)</option>
+      </select>
+    </div>
+  </div>
+</div>
+<br>
+<hr>
+<div class="row text-center">
+  <div class="col-9" style="margin:0 auto;">
+  <label id="q9" for="sel9"> <h1>Question 9</h1></label>
+  <select class="form-control text-center" id="Sel9">
+    <option value = "" disabled selected value>---Select an Option---</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option vlaue="5">5 (Strongly Agree)</option>
+  </select>
+</div>
+</div>
+</div>
+<br>
+<hr>
+<div class="row text-center">
+  <div class="col-10" style="margin:0 auto;">
+  <label id="q10" for="sel10"> <h1>Question 10</h1></label>
+  <select class="form-control text-center" id="Sel10">
+    <option value = "" disabled selected value>---Select an Option---</option>
+    <option value="1">1 (Strongly Disagree)</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option vlaue="5">5 (Strongly Agree)</option>
+  </select>
+</div>
+</div>
+<br>
+<hr>
+<div class="row text-center">
+  <div class="col-6" style="margin:0 auto;">
+    <button class="btn btn-dark submit">Submit Survey</button>
+                                
+  </div>
+</div>
+                             
+</div>
+</div>
+
+<script
+    src="https://code.jquery.com/jquery-3.4.0.js"
+    integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+    crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+     var questions = [
+    {
+      question: "You consider yourself clingy"
+    },
+    {
+      question: "You get jelouse often"
+    },
+    {
+      question: "You are a reigious individual, but also respect others belief's"
+    },
+    {
+      question: "You love to travel, open minded, and try new things"
+    },
+    {
+      question: "You think communication is the main key to a healthy relationship"
+    },
+    {
+      question: "You believe that your partner should also be your best friend"
+    },
+    {
+      question: "Your romantic af"
+    },
+    {
+      question: "You are vegan/vegeterian but you wouldn't mind if your partner wasn't"
+    },
+    {
+      question: "You believe the guy should always pay"
+    },
+    {
+      question: "Kiss on the first date?"
+    },  
+    ]
+
+    var text = "";
+    var i;
+    for (var i = 0; i < questions.length; i++) {
+     $("#q" + (i+1)).html("<strong> <h2>Question" + (i+1) + "</h2><br><h4>" +questions[i].question + "</h4></strong>");
+    }
+
+    $(".submit").on("click", function(event){
+      event.preventDefault();
+
+      function confirmed(){
+        var isConfirmed = true;
+        $(".form-control").each(function(){
+          if($(this).val() === ""){
+            isConfirmed = false;
+          }
+          console.log(isConfirmed);
+        });
+        return isConfirmed;
+      }
+
+      if (confirmed()) {
+        var userData = {
+          name: $("#nameInput").val(),
+          results: [
+          $("#sel1").val(),
+            $("#sel2").val(),
+            $("#sel3").val(),
+            $("#sel4").val(),
+            $("#sel5").val(),
+            $("#sel6").val(),
+            $("#sel7").val(),
+            $("#sel8").val(),
+            $("#sel9").val(),
+            $("#sel10").val()
+          ]
+        }
+        $.post("/api/friends", userData, function(data) {
+        // Grab the result from the AJAX post so that the best match's name and photo are displayed.
+        $("#match-name").text(data.name);
+      
+
+
+        // Show the modal with the best match
+        $("#results-modal").modal("toggle");
+
+        });
+
+
+      } else{
+        alert("Please fill out all required fields and answer all questions");
+      }
+      
+
+      
+    });
+      
+   
+   
+  
+    
+    </script>
+    
+  </body>
+</html>
+
+
+        
+ 
+  
+  
+  
+  
+  
+
+
+ 
